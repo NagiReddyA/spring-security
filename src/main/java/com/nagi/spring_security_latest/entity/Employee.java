@@ -29,7 +29,7 @@ public class Employee implements Serializable {
     @Column(unique = true, length = 100)
     private String email;
 
-    @Column(length = 15)
+    @Column(unique = true,length = 15)
     @NotNull(message = "Phone number is required")
     private String phone;
 
